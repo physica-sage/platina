@@ -122,7 +122,7 @@ static inline void __chk_io_ptr(const volatile void __iomem *ptr) { }
 #include <linux/compiler-clang.h>
 #elif defined(__GNUC__)
 /* The above compilers also define __GNUC__, so order is important here. */
-#include <linux/compiler-gcc.h>
+#include <linux/compiler.h>
 #else
 #error "Unknown compiler"
 #endif
